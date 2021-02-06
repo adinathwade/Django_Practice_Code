@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>index page....</h3>
+{% url 'homedemo' as home%}
+<a href="{{home}}">home</a>
+{% include "app/home.html" with a="hi" b="hello" %}
+
+</body>
+</html>

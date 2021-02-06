@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'app/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {{block.super}} Index {% endblock title %}</title>
+</head>
+<body>
+<h2>From index.....</h2>
+{% block content %}
+<lable>Enter Name : </lable><input type="text">
+{% endblock content %}
+</body>
+</html>
